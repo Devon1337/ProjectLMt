@@ -27,7 +27,7 @@ class 3dPC() {
     forceDirection = new Vector3(forceDirection.x, 0, forceDirection.z);
     
     // Checks for a rigidbody to be applied to a GameObject and places a direction force
-    playerController,GetComponent<Rigidbody>().AddForce(forceDirection.normalized * speed * (Input.GetAxis("Vertical")));
+    playerController.GetComponent<Rigidbody>().AddForce(forceDirection.normalized * speed * (Input.GetAxis("Vertical")));
   }
 
 }
